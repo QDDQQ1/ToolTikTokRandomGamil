@@ -171,7 +171,7 @@ class HSO:
             exit("Error Input ")
         if self.sec == 1:
             try:
-                self.max = 15
+                self.max = int(input(f'	{a3}Put {W}Speed {J21}For Checkr{J22} - {RED}ادخل سرعه الفحص : '))
             except:
                 exit("error Number  ")
             os.system("cls"if os.name=="nt"else"clear")
@@ -182,7 +182,7 @@ class HSO:
                 threading.Thread(target=self.serch_gm).start()
         elif self.sec ==2:
             try:
-                self.max = 15
+                self.max = int(input(f'	{a3}Put {W}Speed {J21}For Checkr{J22} - {RED}ادخل سرعه الفحص : '))
             except:
                 exit("error Number  ")
             os.system("cls"if os.name=="nt"else"clear")
@@ -194,7 +194,7 @@ class HSO:
         elif self.sec ==3:
             self.file = input("Write Name File username : ")
             try:
-                self.max = 15
+                self.max = int(input(f'	{a3}Put {W}Speed {J21}For Checkr{J22} - {RED}ادخل سرعه الفحص : '))
             except:
                 exit("error Number  ")
             os.system("cls"if os.name=="nt"else"clear")
@@ -205,7 +205,7 @@ class HSO:
         elif self.sec ==4:
             self.file = input(" Write Name File username :")
             try:
-                self.max = 15
+                self.max = int(input(f'	{a3}Put {W}Speed {J21}For Checkr{J22} - {RED}ادخل سرعه الفحص : '))
             except:
                 exit("error Number  ")
             os.system("cls"if os.name=="nt"else"clear")
@@ -260,6 +260,7 @@ class HSO:
                 private = str(getting.split('privateAccount":')[1]).split(',"')[0]
                 followers = str(getting.split('followerCount":')[1]).split(',"')[0]
                 following = str(getting.split('followingCount":')[1]).split(',"')[0]
+                language = str(getting.split('language":')[1]).split(',"')[0]
                 like = str(getting.split('heart":')[1]).split(',"')[0]
                 video = str(getting.split('videoCount":')[1]).split(',"')[0]
                 B = bin(int(id))[2:]
@@ -269,22 +270,23 @@ class HSO:
                     L += 1
                 Date = datetime.datetime.fromtimestamp(int(BS, 2)).strftime('%Y')
                 ff=f'''
-[New hits acount]
-═━═━═━═━═━═
-❄️Name :{name}
-❄️UserName : {user}
-❄️Email : {email}
-❄️Id :{id}
-❄️Following : {following}
-❄️Followers :{followers}
-❄️Likes : {like}
-❄️Videos : {video}
-❄️Data : {Date}
-❄️Country : {country}
-❄️Private : {private}
-❄️Bio : {bio}
+𝗡𝗘𝗪 𝗧𝗜𝗞𝗧𝗢𝗞 𝗛𝗜𝗧
+◎︎ •၊၊||၊|။||||။‌‌‌‌‌၊|• 0:12
+❄️𝗡𝗮𝗺𝗲 :{name}
+❄️𝗨𝘀𝗲𝗿𝗡𝗮𝗺𝗲 : {user}
+❄️𝗘𝗺𝗮𝗶𝗹 : {email}
+❄️𝗜𝗗 :{id}
+❄️𝗳𝗼𝗹𝗹𝗼𝘄𝗶𝗻𝗴 : {following}
+❄️𝗙𝗼𝗹𝗹𝗼𝘄𝗲𝗿𝘀 :{followers}
+❄️𝗟𝗶𝗸𝗲𝘀 : {like}
+❄️𝗩𝗶𝗱𝗲𝗼𝘀 : {video}
+❄️𝗖𝗿𝗲𝗮𝘁𝗲𝗱 : {Date}
+❄️𝗖𝗼𝘂𝗻𝘁𝗿𝘆 : {country}
+❄️𝗣𝗿𝗶𝘃𝗮𝘁𝗲 : {private}
+❄️𝗕𝗶𝗼 : {bio}
+❄️𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲 : {language}
 ❄️Programmer : {self.pro}
-═━═━═━═━═━═
+◎︎ •၊၊||၊|။||||။‌‌‌‌‌၊|• 0:12
     '''
                 with open(tikrandom,'a',encoding="utf-8")as h:
                     h.write(ff+"\n")
@@ -293,12 +295,12 @@ class HSO:
             except Exception as e:
                 print(e)
                 ff=f'''
-[New hits]
-═━═━═━
-❄️UserName : {user}
-❄️Email  : {email}
+𝗡𝗘𝗪 𝗧𝗜𝗞𝗧𝗢𝗞 𝗛𝗜𝗧
+◎︎ •၊၊||၊|။||||။‌‌‌‌‌၊|• 0:12
+❄️𝗨𝘀𝗲𝗿𝗡𝗮𝗺𝗲 : {user}
+❄️𝗘𝗺𝗮𝗶𝗹 : {email}
 ❄️Programmer : {self.pro}
-═━═━═━
+◎︎ •၊၊||၊|။||||။‌‌‌‌‌၊|• 0:12
 '''
                 with open("TIKTOK - BROKIN.txt",'a',encoding="utf-8")as h:
                     h.write(ff+"\n")
