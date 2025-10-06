@@ -122,7 +122,6 @@ class HSO:
         self.bt=0
         self.ge=0
         self.be=0
-        self.pro='@oo22bb'
         self.secret=secrets.token_hex(16)
         self.ses=requests.Session()
         self.colors = [BR, AH2, AS2, MJ, MJ2, MJ3, MJ4, ma]
@@ -161,7 +160,6 @@ class HSO:
     ]
     )
         self.birthday = random.randrange(1980,2010),random.randrange(1,12),random.randrange(1,28)        
-        self.dev=f"{self.pro}"
         self.select()
     def select(self):       
         try:
@@ -285,7 +283,7 @@ class HSO:
 ❄️𝗣𝗿𝗶𝘃𝗮𝘁𝗲 : {private}
 ❄️𝗕𝗶𝗼 : {bio}
 ❄️𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲 : {language}
-❄️Programmer : {self.pro}
+❄️Programmer : @oo22bb
 ◎︎ •၊၊||၊|။||||။‌‌‌‌‌၊|• 0:12
     '''
                 with open(tikrandom,'a',encoding="utf-8")as h:
@@ -299,7 +297,7 @@ class HSO:
 ◎︎ •၊၊||၊|။||||။‌‌‌‌‌၊|• 0:12
 ❄️𝗨𝘀𝗲𝗿𝗡𝗮𝗺𝗲 : {user}
 ❄️𝗘𝗺𝗮𝗶𝗹 : {email}
-❄️Programmer : {self.pro}
+❄️Programmer : @oo22bb
 ◎︎ •၊၊||၊|။||||။‌‌‌‌‌၊|• 0:12
 '''
                 with open("TIKTOK - BROKIN.txt",'a',encoding="utf-8")as h:
